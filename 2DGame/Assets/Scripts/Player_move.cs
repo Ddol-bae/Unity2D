@@ -31,10 +31,10 @@ public class Player_move : MonoBehaviour
             animator.SetBool("IsWalking", true);
 
         //Jump
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump")){
             rigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             animator.SetBool("IsJump", true);
-        
+        }
     }
 
     
@@ -54,7 +54,7 @@ public class Player_move : MonoBehaviour
         Debug.DrawRay(rigid.position, Vector3.down, new Color(0,1,0));
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
         if(rayHit.collider != null) {
-            if(rayHit.distance < 1f)
+            if(rayHit.distance < 0.5f)
                 animator.SetBool("IsJump", false);
         }
     }
