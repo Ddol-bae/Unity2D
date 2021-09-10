@@ -31,7 +31,7 @@ public class Player_move : MonoBehaviour
             animator.SetBool("IsWalking", true);
 
         //Jump
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") && !animator.GetBool("IsJump")){
             rigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             animator.SetBool("IsJump", true);
         }
@@ -42,7 +42,7 @@ public class Player_move : MonoBehaviour
     {
         //Player Move
         float h = Input.GetAxisRaw("Horizontal");
-        rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
+        rigid.AddForce(Vector2.right * h * rigid.gravityScale, ForceMode2D.Impulse);
         
         //Player Max Speed
         if(rigid.velocity.x > MaxSpeed) //Right

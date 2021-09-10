@@ -59,6 +59,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -68,11 +69,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,9 +91,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -150,10 +154,10 @@ TextureImporter:
       name: Bronze 0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 34
-        width: 16
-        height: 16
+        x: 4
+        y: 38
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +175,10 @@ TextureImporter:
       name: Bronze 1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 34
-        width: 16
-        height: 16
+        x: 22
+        y: 38
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +196,10 @@ TextureImporter:
       name: Bronze 2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 34
-        width: 16
-        height: 16
+        x: 38
+        y: 38
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,12 +217,12 @@ TextureImporter:
       name: Bronze 3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 55
+        y: 38
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 0.47932053, y: 0.5183818}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,10 +238,10 @@ TextureImporter:
       name: Silver 0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17
-        width: 16
-        height: 16
+        x: 4
+        y: 21
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +259,10 @@ TextureImporter:
       name: Silver 1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 16
-        height: 16
+        x: 21
+        y: 21
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +280,10 @@ TextureImporter:
       name: Silver 2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 17
-        width: 16
-        height: 16
+        x: 38
+        y: 21
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +301,10 @@ TextureImporter:
       name: Silver 3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 17
-        width: 16
-        height: 16
+        x: 55
+        y: 21
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +322,10 @@ TextureImporter:
       name: Gold 0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 4
+        y: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +343,10 @@ TextureImporter:
       name: Gold 1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 16
-        height: 16
+        x: 21
+        y: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +364,10 @@ TextureImporter:
       name: Gold 2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 0
-        width: 16
-        height: 16
+        x: 38
+        y: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +385,10 @@ TextureImporter:
       name: Gold 3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 0
-        width: 16
-        height: 16
+        x: 55
+        y: 4
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
