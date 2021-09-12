@@ -21,7 +21,7 @@ public class Player_move : MonoBehaviour
     void Update() //단발적인 입력에 좋음.
     {   
         //Sprite Direction Switch
-        if(Input.GetButtonDown("Horizontal"))
+        if(Input.GetButton("Horizontal"))
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
 
         //Walk Animation
@@ -56,6 +56,13 @@ public class Player_move : MonoBehaviour
         if(rayHit.collider != null) {
             if(rayHit.distance < 0.5f)
                 animator.SetBool("IsJump", false);
+        }
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy") {
+            Debug.Log("플레이어가 맞았습니다");
         }
     }
 }
