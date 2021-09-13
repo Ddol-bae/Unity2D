@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_move : MonoBehaviour
 {
+    public Game_Manager game_manager;
     public float MaxSpeed;
     public float JumpPower;
     Rigidbody2D rigid;
@@ -35,6 +36,7 @@ public class Player_move : MonoBehaviour
             rigid.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             animator.SetBool("IsJump", true);
         }
+    
     }
 
     
@@ -63,6 +65,11 @@ public class Player_move : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy") 
             OnDamaged(collision.transform.position);   
+        else if (collision.gameObject.tag == "Finish"){
+            Debug.Log("피니시 닿았습니다.");
+            game_manager.NextStage();
+        }
+        
         
     }
 
@@ -87,5 +94,12 @@ public class Player_move : MonoBehaviour
         gameObject.layer = 3; 
         spriteRenderer.color = new Color(1,1,1,1);
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        
+    }
+ 
 
 }
