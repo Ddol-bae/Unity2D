@@ -6,14 +6,19 @@ public class Game_Manager : MonoBehaviour
 {
     public int StageIndex;
     public Player_move player;
-    public GameObject[] Tilemap;
-
+    public GameObject[] Stages;
+    
     public void NextStage()
-    { 
-        Tilemap[StageIndex].SetActive(false);
-        StageIndex ++; 
-        Tilemap[StageIndex].SetActive(true);
-        PlayerReposition();
+    {   
+        if(StageIndex < Stages.Length -1 ){
+            Stages[StageIndex].SetActive(false);
+            StageIndex ++; 
+            Stages[StageIndex].SetActive(true);
+            PlayerReposition();
+        }
+        else{
+            Time.timeScale = 0; 
+        }
     }
 
 
