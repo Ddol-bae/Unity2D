@@ -22,7 +22,7 @@ public class Player_move : MonoBehaviour
     void Update() //단발적인 입력에 좋음.
     {   
         //Sprite Direction Switch
-        if(Input.GetButton("Horizontal"))
+        if(Input.GetButton("Horizontal")) 
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
 
         //Walk Animation
